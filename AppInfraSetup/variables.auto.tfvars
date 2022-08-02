@@ -1,7 +1,7 @@
 # This is the file that will house the default values for some of the variables and some constants used
 
 #Global
-region      = "ap-south-1"
+region      = "ap-southeast-1"
 project_tag = "my-IaC-Proj"
 #Environment & Instances
 env_type = "DEV"

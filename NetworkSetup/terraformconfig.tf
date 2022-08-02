@@ -6,9 +6,9 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "myiacprojadmin"
-    key    = "terraformstate/NetworkSetup.tfstate"
-    region = "ap-south-1" #Variables are not allowed here
+    bucket = "terra-state-hvt"
+    key    = "terraform/NetworkSetup.tfstate"
+    region = "ap-southeast-1" #Variables are not allowed here
     encrypt        = true
   }
 }

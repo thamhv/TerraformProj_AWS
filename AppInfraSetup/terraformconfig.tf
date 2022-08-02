@@ -8,9 +8,9 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket         = "myiacprojadmin"
-    key            = "terraformstate/AppInfrastp.tfstate"
-    region         = "ap-south-1" #Variables are not allowed here
+    bucket         = "terra-state-hvt"
+    key            = "terraform/AppInfrastp.tfstate"
+    region         = "ap-southeast-1" #Variables are not allowed here
     #dynamodb_table = "terraform-up-and-running-locks"
     encrypt        = true
   }
