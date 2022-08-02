@@ -8,7 +8,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket         = "terra-state-hvt"
+    bucket         = "terraform-state-hvt"
     key            = "terraform/AppInfrastp.tfstate"
     region         = "ap-southeast-1" #Variables are not allowed here
     #dynamodb_table = "terraform-up-and-running-locks"

@@ -12,7 +12,7 @@ data "terraform_remote_state" "networking" {
   }*/
   backend = "s3"
   config = {
-    bucket = "terra-state-hvt"
+    bucket = "terraform-state-hvt"
     key    = "env:/${terraform.workspace}/terraform/NetworkSetup.tfstate"
     region = var.region
   }

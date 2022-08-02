@@ -2,6 +2,6 @@
 
 #New Bucket for IaC Project
 resource "aws_s3_bucket" "s3bucket_newproj" {
-  bucket = "terra-state-hvt"
+  bucket = "terraform-state-hvt"
   tags   = { Project = "${var.project_tag}" }
 }

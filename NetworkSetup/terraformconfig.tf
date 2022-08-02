@@ -6,7 +6,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "terra-state-hvt"
+    bucket = "terraform-state-hvt"
     key    = "terraform/NetworkSetup.tfstate"
     region = "ap-southeast-1" #Variables are not allowed here
     encrypt        = true
